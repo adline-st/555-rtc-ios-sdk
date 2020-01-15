@@ -67,6 +67,7 @@
 		2B67039D23C3D089005626A7 /* folly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B67036C23C3D085005626A7 /* folly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B67039E23C3D089005626A7 /* RCTBlob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B67036D23C3D085005626A7 /* RCTBlob.framework */; };
 		2B67039F23C3D089005626A7 /* RCTBlob.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B67036D23C3D085005626A7 /* RCTBlob.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BC7096723CFB27400854D98 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B67035223C3CFE8005626A7 /* main.jsbundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -381,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC7096723CFB27400854D98 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,14 +555,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies",
 				);
-				INFOPLIST_FILE = RtcReactSdk/Info.plist;
+				INFOPLIST_FILE = Rtc555Sdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555Sdk;
 				PRODUCT_MODULE_NAME = Rtc555Sdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -586,14 +588,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies",
 				);
-				INFOPLIST_FILE = RtcReactSdk/Info.plist;
+				INFOPLIST_FILE = Rtc555Sdk/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555Sdk;
 				PRODUCT_MODULE_NAME = Rtc555Sdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -607,13 +609,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RtcReactSdkTests/Info.plist;
+				INFOPLIST_FILE = Rtc555SdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555SdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -624,13 +626,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RtcReactSdkTests/Info.plist;
+				INFOPLIST_FILE = Rtc555SdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555SdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
