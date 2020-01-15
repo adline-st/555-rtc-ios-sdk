@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 	
   
    s.resource_bundles = {
-     'Rtc555Sdk' => ['Rtc555Sdk/main.jsbundle']
+     'main' => ['Rtc555Sdk/main.jsbundle']
    }
 
   other_frameworks =  ['CoreModules', 'cxxreact', 'DoubleConversion', 'FBReactNativeSpec', 'folly', 'glog', 'jsi', 'jsinspector', 'jsireact','RCTActionSheet', 'RCTAnimation', 'RCTBlob', 'RCTImage','RCTLinking','RCTSettings','RCTText','RCTTypeSafety','RCTVibration','react_native_netinfo','react_native_webrtc','React','ReactCommon','ReactNativeIncallManager','RNCAsyncStorage','RNDeviceInfo','WebRTC','yoga','CoreModules','DoubleConversion']
