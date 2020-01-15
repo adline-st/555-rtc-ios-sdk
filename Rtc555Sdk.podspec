@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harishgupta01' => 'harish.28gupta@gmail.com' }
-  s.source           = { :git => 'https://github.com/555platform/555-rtc-sdk-pod.git' }
+  s.source           = { :git => 'https://github.com/555platform/555-rtc-sdk-pod.git' , :tag => 'v0.0.1' }
   s.source_files = 'Rtc555Sdk/Rtc555Sdk/*'
   s.ios.deployment_target = '8.0'
   s.exclude_files = "Rtc555Sdk/Rtc555Sdk/*.plist"
