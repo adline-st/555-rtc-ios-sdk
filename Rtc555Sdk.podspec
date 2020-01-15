@@ -18,16 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/harishgupta01/Rtc555Sdk'
+  Mobile SDK for Audio, Video and chat functionality. This SDK leverages Comcast 555 Platform.
+  DESC
+  s.homepage         = 'https://github.com/555platform/555-rtc-sdk-pod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harishgupta01' => 'harish.28gupta@gmail.com' }
-  s.source           = { :git => 'https://github.com/harishgupta01/Rtc555Sdk.git' }
-  #s.source           = { :http => 'file:' + __dir__ + '/Rtc555Sdk.zip' }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/555platform/555-rtc-sdk-pod.git' }
   s.source_files = 'Rtc555Sdk/Rtc555Sdk/*'
   s.ios.deployment_target = '8.0'
   s.exclude_files = "Rtc555Sdk/Rtc555Sdk/*.plist"
