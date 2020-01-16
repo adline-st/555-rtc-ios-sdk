@@ -19,7 +19,7 @@ class RtcReactBridge: NSObject {
  
     if bridge == nil {
         let bundle = Bundle(for: RtcReactBridge.self)
-        let bundleUrl  = bundle.url(forResource: "Rtc555Sdk", withExtension: "jsbundle")
+        let bundleUrl  = bundle.url(forResource: "main", withExtension: "jsbundle")
         bridge = RCTBridge.init(bundleURL: bundleUrl, moduleProvider: nil, launchOptions: nil)
                 
         NotificationCenter.default.addObserver(self, selector: #selector(javascriptDidLoad(notification:)), name: .RCTJavaScriptDidLoad, object: nil)

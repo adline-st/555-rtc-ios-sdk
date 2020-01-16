@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B2D77D123D0B7F2009C6C3A /* Rtc555Sdk.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B2D77D023D0B7F2009C6C3A /* Rtc555Sdk.jsbundle */; };
+		2B2D77D323D0CDA1009C6C3A /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B2D77D223D0CDA1009C6C3A /* main.jsbundle */; };
 		2B67033623C3CF93005626A7 /* Rtc555Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B67032C23C3CF93005626A7 /* Rtc555Sdk.framework */; };
 		2B67033B23C3CF93005626A7 /* RtcReactSdkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B67033A23C3CF93005626A7 /* RtcReactSdkTests.m */; };
 		2B67033D23C3CF93005626A7 /* RtcReactSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B67032F23C3CF93005626A7 /* RtcReactSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,7 +118,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B2D77D023D0B7F2009C6C3A /* Rtc555Sdk.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rtc555Sdk.jsbundle; sourceTree = "<group>"; };
+		2B2D77D223D0CDA1009C6C3A /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		2B67032C23C3CF93005626A7 /* Rtc555Sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rtc555Sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B67032F23C3CF93005626A7 /* RtcReactSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtcReactSdk.h; sourceTree = "<group>"; };
 		2B67033023C3CF93005626A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		2B67032223C3CF93005626A7 = {
 			isa = PBXGroup;
 			children = (
-				2B2D77D023D0B7F2009C6C3A /* Rtc555Sdk.jsbundle */,
+				2B2D77D223D0CDA1009C6C3A /* main.jsbundle */,
 				2B67032E23C3CF93005626A7 /* Rtc555Sdk */,
 				2B67033923C3CF93005626A7 /* Rtc555SdkTests */,
 				2B67032D23C3CF93005626A7 /* Products */,
@@ -380,7 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2D77D123D0B7F2009C6C3A /* Rtc555Sdk.jsbundle in Resources */,
+				2B2D77D323D0CDA1009C6C3A /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
