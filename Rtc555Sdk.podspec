@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "Rtc555Sdk/Rtc555Sdk/*.plist"
   s.vendored_frameworks = 'Rtc555Sdk/Dependencies/CoreModules.framework' ,'Rtc555Sdk/Dependencies/cxxreact.framework' ,'Rtc555Sdk/Dependencies/DoubleConversion.framework' ,  'Rtc555Sdk/Dependencies/FBReactNativeSpec.framework', 'Rtc555Sdk/Dependencies/folly.framework' ,  'Rtc555Sdk/Dependencies/glog.framework' ,  'Rtc555Sdk/Dependencies/jsi.framework', 'Rtc555Sdk/Dependencies/jsinspector.framework' ,  'Rtc555Sdk/Dependencies/jsireact.framework',  'Rtc555Sdk/Dependencies/RCTActionSheet.framework', 'Rtc555Sdk/Dependencies/RCTAnimation.framework' ,  'Rtc555Sdk/Dependencies/RCTBlob.framework',  'Rtc555Sdk/Dependencies/RCTImage.framework', 'Rtc555Sdk/Dependencies/RCTLinking.framework' ,  'Rtc555Sdk/Dependencies/RCTNetwork.framework' ,  'Rtc555Sdk/Dependencies/RCTSettings.framework',  'Rtc555Sdk/Dependencies/RCTText.framework',  'Rtc555Sdk/Dependencies/RCTTypeSafety.framework',  'Rtc555Sdk/Dependencies/RCTVibration.framework',  'Rtc555Sdk/Dependencies/react_native_netinfo.framework',  'Rtc555Sdk/Dependencies/react_native_webrtc.framework',  'Rtc555Sdk/Dependencies/React.framework' ,'Rtc555Sdk/Dependencies/ReactCommon.framework','Rtc555Sdk/Dependencies/ReactNativeIncallManager.framework','Rtc555Sdk/Dependencies/RNCAsyncStorage.framework','Rtc555Sdk/Dependencies/RNDeviceInfo.framework','Rtc555Sdk/Dependencies/WebRTC.framework','Rtc555Sdk/Dependencies/yoga.framework','Rtc555Sdk/Dependencies/CoreModules.framework','Rtc555Sdk/Dependencies/DoubleConversion.framework'
 	
-  
+   s.resource = 'Rtc555Sdk/Rtc555Sdk.jsbundle'
    s.resource_bundles = {
      'Rtc555Sdk' => ['Rtc555Sdk/Rtc555Sdk.jsbundle']
    }
