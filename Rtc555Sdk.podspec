@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   Mobile SDK for Audio, Video and chat functionality. This SDK leverages Comcast 555 Platform.
   DESC
-  s.homepage         = 'https://github.com/555platform/555-rtc-sdk-pod'
+  s.homepage         = 'https://github.com/555platform/555-rtc-ios-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harishgupta01' => 'harish.28gupta@gmail.com' }
-  s.source           = { :git => 'https://github.com/555platform/555-rtc-sdk-pod.git' , :tag => 'v0.0.2' }
+  s.source           = { :git => 'https://github.com/555platform/555-rtc-ios-sdk.git' , :tag => 'v0.0.2' }
   s.source_files = 'Rtc555Sdk/Rtc555Sdk/*'
   s.ios.deployment_target = '8.0'
   s.exclude_files = "Rtc555Sdk/Rtc555Sdk/*.plist"
