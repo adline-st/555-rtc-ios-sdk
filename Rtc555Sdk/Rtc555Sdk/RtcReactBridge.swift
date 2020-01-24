@@ -11,6 +11,7 @@ import React
 
 class RtcReactBridge: NSObject {
   var bridge: RCTBridge?
+  public var rtcNativeEventDelegate:rtcNativeEventDelegate!
   static let sharedInstance = RtcReactBridge()
   
   func createBridge() {
@@ -34,5 +35,5 @@ class RtcReactBridge: NSObject {
   func callMethod(_ apiname: String, _ args:[Any]){
        bridge?.enqueueJSCall("RtcSdk", method: apiname, args: args, completion: nil)
   }
-    
+
 }

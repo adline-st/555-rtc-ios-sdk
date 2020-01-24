@@ -2,8 +2,8 @@
 //  RtcReactSdk.h
 //  RtcReactSdk
 //
-//  Created by Harish Gupta on 1/6/20.
-//  Copyright © 2020 Harish Gupta. All rights reserved.
+//  Created by Admin on 13/11/19.
+//  Copyright © 2019 Admin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char RtcReactSdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RtcReactSdk/PublicHeader.h>
 
+#import <RtcReactSdk/RtcNativeModule.h>
 
