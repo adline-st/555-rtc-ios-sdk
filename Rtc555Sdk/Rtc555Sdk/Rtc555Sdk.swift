@@ -1,6 +1,6 @@
 //
-//  RtcReactSdk.swift
-//  RtcReactSdk
+//  Rtc555Sdk.swift
+//  Rtc555Sdk
 //
 //  Created by Admin on 13/11/19.
 //  Copyright © 2019 Admin. All rights reserved.

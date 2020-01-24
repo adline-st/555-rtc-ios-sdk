@@ -1,6 +1,6 @@
 //
 //  RtcReactBridgewrapper.swift
-//  RtcReactSdk
+//  Rtc555Sdk
 //
 //  Created by Girish on 21/11/19.
 //  Copyright © 2019 Admin. All rights reserved.

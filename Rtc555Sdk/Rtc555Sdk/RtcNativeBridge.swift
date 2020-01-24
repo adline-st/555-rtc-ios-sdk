@@ -1,6 +1,6 @@
 //
 //  RtcNativeBridge.swift
-//  RtcReactSdk
+//  Rtc555Sdk
 //
 //  Created by Girish on 04/12/19.
 //  Copyright © 2019 Admin. All rights reserved.

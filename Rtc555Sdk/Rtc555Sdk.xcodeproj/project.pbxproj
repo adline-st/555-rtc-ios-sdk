@@ -56,7 +56,7 @@
 		68C1ED9623DAE216009F2EC9 /* RCTNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C1ED7A23DAE216009F2EC9 /* RCTNetwork.framework */; };
 		68E74E0A239546F700FD54CF /* RtcReactBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685FDE512386B585004E357E /* RtcReactBridge.swift */; };
 		68E80C26237C1F29000BE9BA /* Rtc555Sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E80C1C237C1F29000BE9BA /* Rtc555Sdk.framework */; };
-		68E80C2B237C1F29000BE9BA /* RtcReactSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E80C2A237C1F29000BE9BA /* RtcReactSdkTests.swift */; };
+		68E80C2B237C1F29000BE9BA /* Rtc555SdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E80C2A237C1F29000BE9BA /* Rtc555SdkTests.swift */; };
 		68E80C37237C1F50000BE9BA /* Rtc555Sdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E80C36237C1F50000BE9BA /* Rtc555Sdk.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,10 +118,10 @@
 		68C1ED7923DAE216009F2EC9 /* RCTText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RCTText.framework; path = Dependencies/RCTText.framework; sourceTree = "<group>"; };
 		68C1ED7A23DAE216009F2EC9 /* RCTNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RCTNetwork.framework; path = Dependencies/RCTNetwork.framework; sourceTree = "<group>"; };
 		68E80C1C237C1F29000BE9BA /* Rtc555Sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rtc555Sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68E80C1F237C1F29000BE9BA /* RtcReactSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RtcReactSdk.h; sourceTree = "<group>"; };
+		68E80C1F237C1F29000BE9BA /* Rtc555Sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rtc555Sdk.h; sourceTree = "<group>"; };
 		68E80C20237C1F29000BE9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68E80C25237C1F29000BE9BA /* Rtc555SdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rtc555SdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68E80C2A237C1F29000BE9BA /* RtcReactSdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtcReactSdkTests.swift; sourceTree = "<group>"; };
+		68E80C2A237C1F29000BE9BA /* Rtc555SdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rtc555SdkTests.swift; sourceTree = "<group>"; };
 		68E80C2C237C1F29000BE9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68E80C36237C1F50000BE9BA /* Rtc555Sdk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rtc555Sdk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				68E80C1E237C1F29000BE9BA /* Rtc555Sdk */,
-				68E80C29237C1F29000BE9BA /* RtcReactSdkTests */,
+				68E80C29237C1F29000BE9BA /* Rtc555SdkTests */,
 				68E80C1D237C1F29000BE9BA /* Products */,
 				E65B95A0876FD24199681B66 /* Frameworks */,
 			);
@@ -198,7 +198,7 @@
 				68C1EB6F23D1A974009F2EC9 /* main.jsbundle */,
 				68B21A6D2397E6F900226364 /* RtcNativeModule.h */,
 				68B21A6F2397E70100226364 /* RtcNativeModule.m */,
-				68E80C1F237C1F29000BE9BA /* RtcReactSdk.h */,
+				68E80C1F237C1F29000BE9BA /* Rtc555Sdk.h */,
 				68E80C20237C1F29000BE9BA /* Info.plist */,
 				68E80C36237C1F50000BE9BA /* Rtc555Sdk.swift */,
 				685FDE512386B585004E357E /* RtcReactBridge.swift */,
@@ -207,13 +207,13 @@
 			path = Rtc555Sdk;
 			sourceTree = "<group>";
 		};
-		68E80C29237C1F29000BE9BA /* RtcReactSdkTests */ = {
+		68E80C29237C1F29000BE9BA /* Rtc555SdkTests */ = {
 			isa = PBXGroup;
 			children = (
-				68E80C2A237C1F29000BE9BA /* RtcReactSdkTests.swift */,
+				68E80C2A237C1F29000BE9BA /* Rtc555SdkTests.swift */,
 				68E80C2C237C1F29000BE9BA /* Info.plist */,
 			);
-			path = RtcReactSdkTests;
+			path = Rtc555SdkTests;
 			sourceTree = "<group>";
 		};
 		E65B95A0876FD24199681B66 /* Frameworks */ = {
@@ -440,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E80C2B237C1F29000BE9BA /* RtcReactSdkTests.swift in Sources */,
+				68E80C2B237C1F29000BE9BA /* Rtc555SdkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,13 +670,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPP27B939A;
-				INFOPLIST_FILE = RtcReactSdkTests/Info.plist;
+				INFOPLIST_FILE = Rtc555SdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555SdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,13 +689,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPP27B939A;
-				INFOPLIST_FILE = RtcReactSdkTests/Info.plist;
+				INFOPLIST_FILE = Rtc555SdkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.RtcReactSdkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comcast.Rtc555SdkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
