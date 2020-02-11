@@ -27,7 +27,7 @@ class RtcNativeBridge: NSObject {
     }
     
     @objc func onRtcSessionStatus(_ status: NSString,traceId trace: NSString) {
-      
+
         let userinfo = ["status":status, "traceId":trace]
         RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventSessionStatus(status: userinfo)
       
@@ -47,14 +47,36 @@ class RtcNativeBridge: NSObject {
     
     }
     
-    @objc func onDialCallResponse(_ callId: NSString){
+    @objc func onCallResponse(_ callId: NSString){
+
         let userinfo = ["callId":callId]
-        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventDialSuccess(staus: userinfo)
+        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallSuccess(staus: userinfo)
     }
     
-    @objc func onDialCallFailed(_ errorInfo: NSDictionary){
+    @objc func onCallFailed(_ errorInfo: NSDictionary){
+        
         let userinfo = ["info":errorInfo]
-        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventDialFailed(error: userinfo)
+        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallFailed(error: userinfo)
+    
+    }
+    
+    @objc func onRejectSuccess(_ callId: NSString){
+           
+           let userinfo = ["callId":callId]
+           RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallSuccess(staus: userinfo)
+       }
+    
+    @objc func onRejectFailed(_ errorInfo: NSDictionary){
+        
+        let userinfo = ["info":errorInfo]
+        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallFailed(error: userinfo)
+    
+    }
+    
+    @objc func onCallMerged(_ callId: NSString){
+              
+        let userinfo = ["callId":callId]
+        RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallMergeSuccess(status: userinfo)
     }
     
 }
@@ -65,6 +87,7 @@ public protocol rtcNativeEventDelegate {
      func onRtcNativeEventConnectionError(error connectionErrorInfo: [AnyHashable : Any])
      func onRtcNativeEventSessionStatus(status callStatusInfo: [AnyHashable : Any])
      func onRtcNativeEventSessionError(error sessionErrorInfo:[AnyHashable : Any])
-     func onRtcNativeEventDialSuccess(staus dialStatus: [AnyHashable : Any])
-     func onRtcNativeEventDialFailed(error sessionErrorInfo:[AnyHashable : Any])
+     func onRtcNativeEventCallSuccess(staus dialStatus: [AnyHashable : Any])
+     func onRtcNativeEventCallFailed(error sessionErrorInfo:[AnyHashable : Any])
+     func onRtcNativeEventCallMergeSuccess(status callStatusInfo: [AnyHashable : Any])
 }
