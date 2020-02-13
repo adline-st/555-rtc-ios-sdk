@@ -48,7 +48,7 @@ class RtcNativeBridge: NSObject {
     }
     
     @objc func onCallResponse(_ callId: NSString){
-
+        
         let userinfo = ["callId":callId]
         RtcReactBridge.sharedInstance.rtcNativeEventDelegate?.onRtcNativeEventCallSuccess(staus: userinfo)
     }

@@ -174,6 +174,11 @@ public class Rtc555Sdk: NSObject,rtcNativeEventDelegate {
            RtcReactBridge.sharedInstance.callMethod("sendDTMF",args)
     }
     
+    public func cleanup(){
+           let args:[String] = []
+           RtcReactBridge.sharedInstance.callMethod("cleanup",args)
+    }
+    
     public func reject(notificationData notification:[AnyHashable : Any],completion: @escaping (Result<String, Error>) -> Void) {
            let args = [notification]
            RtcReactBridge.sharedInstance.callMethod("reject",args)
