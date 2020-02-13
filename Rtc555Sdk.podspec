@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Rtc555Sdk'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'A short description of Rtc555Sdk.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'harishgupta01' => 'harish.28gupta@gmail.com' }
-  s.source           = { :git => 'https://github.com/555platform/555-rtc-ios-sdk.git' , :tag => 'v0.0.4' }
+  s.source           = { :git => 'https://github.com/555platform/555-rtc-ios-sdk.git' , :tag => 'v0.0.5' }
   s.source_files = 'Rtc555Sdk/Rtc555Sdk/*'
   s.ios.deployment_target = '10.0'
   s.exclude_files = "Rtc555Sdk/Rtc555Sdk/*.plist"
