@@ -1,7 +1,7 @@
  # Overview
 
 
-555 RTC SDK provides APIs which allow iOS developers to create apps with different features like Audio/Video/Pstn call, 
+555 RTC SDK provides APIs which allow iOS developers to create apps with different features like Audio/Video/PSTN call, 
 conference call, chat, screen sharing, etc. The services offered by SDK are supported by 555 platform's reliable and scalable infrastructure designed to handle a large number of calls. 
 
 Below steps allow the user to make an end-to-end PSTN call. This includes user authentication, login, notification creating media connection.  
@@ -47,7 +47,7 @@ Rtc555Sdk.setConfig(config: config)
   
 ## Initiating an Outgoing Call
 
-To make outgoing calls, pass destination telephone number, notification payload to *dial* api. Notification payload contains two fields called *data* and *notification*. Users can add any custom data as part *data* key which will get delivered to the remote end as part of the notification. The notification key contains the notification type and federation type of the notification (Both values are already populated in the below example). 
+To make outgoing calls, pass destination telephone number, notification payload to *dial* API. Notification payload contains two fields called *data* and *notification*. Users can add any custom data as part *data* key which will get delivered to the remote end as part of the notification. The notification key contains the notification type and federation type of the notification (Both values are already populated in the below example). 
 
 
 *dial* API returns enum Result. A successful dial API call with return call Id, failure case return error code and the reason for the error.
@@ -165,7 +165,7 @@ Rtc555Voice.reject(notificationData: notificationdata){ result in
 
 ## End an Active Call
 
-User need to *hangup* API to end the active call.
+Users need to *hangup* API to end the active call.
 
 ```swift
 Rtc555Voice.hangup(callId: callId)
@@ -177,7 +177,7 @@ Rtc555Voice.hangup(callId: callId)
 
 ## Clean up the session.
 
-Invoke below API in Rtc555Sdk to release all the resources used by SDK. This call also allows  client to disconect with 555 platform backend. It is advisable for app developer to call this API if app goes to background or kill state. 
+Invoke below API in Rtc555Sdk to release all the resources used by SDK. This call also allows the client to disconnect with the 555 platform backend. The app developer should call this API if the app goes to the background or kill state. 
  
 ```swift
 Rtc555Sdk.cleanup()
@@ -195,7 +195,7 @@ Features offered by iOS SDK for PSTN call are:
 
 ### Hold Call
 
-This API call allows user to hold the ongoing call. Both caller and callee won't able to hear to each other after invoking this call.
+This API call allows users to hold the ongoing call. Both caller and callee won't able to hear to each other after invoking this call.
 
 ```swift
 Rtc555Voice.hold(callId: callIds)
@@ -207,7 +207,7 @@ Rtc555Voice.hold(callId: callIds)
 
 ### Unhold Call
 
-This API call allows user to un-hold the already holded call. Both caller and callee will to hear to each other after invoking this call.
+This API call allows users to un-hold the already held call. Both caller and callee will hear each other after invoking this call.
 
 ```swift
 Rtc555Voice.unhold(callId: callId)
@@ -218,7 +218,7 @@ Rtc555Voice.unhold(callId: callId)
 |callId| callId is unique id for this call which was returned from dial/accept API|
 
 ### Mute Local Audio
-This API call allows user to mute it's audio in the call. 
+This API call allows users to mute it's audio in the call. 
 
 ```swift
 Rtc555Voice.mute(callId: callId)
@@ -243,7 +243,7 @@ Rtc555Voice.unmute(callId: callId)
 ## Audio Call Delegates
 
 
-In order to get call status or error report duing the call, impletement Rtc555SdkDelegate protocol and initialize the voice delegate as below
+To get call status or error report during the call, implement Rtc555SdkDelegate protocol and initialize the voice delegate as below
 
 ```swift
 Rtc555Voice.rtcDelegate = self
@@ -251,7 +251,7 @@ Rtc555Voice.rtcDelegate = self
 
 ### onStatus
 
-This callback gets invoked when we receives status of ongoing PSTN call.
+This callback gets invoked when we receive the status of an ongoing PSTN call.
 
 ```swift
     func onStatus(status callStatus: CallStatus,id callId:String) {
@@ -273,7 +273,7 @@ Status:
 
 ### onError
 
-This callback gets invoked when we receives error from ongoing PSTN call.
+This callback gets invoked when we receive an error from an ongoing PSTN call.
 
 ```swift
     func onError(error errorInfo: Error,id callId:String) {
@@ -290,7 +290,7 @@ This callback gets invoked when we receives error from ongoing PSTN call.
 
 ### onNotification
 
-In case you want to use XMPP notification (Instead of APNS), using this optional delegate call. Client need to be connected to 555 backend in order to avail this notification callback.
+In case you want to use XMPP notification (Instead of APNS), using this optional delegate call. The client needs to be connected to 555 backend to avail of this notification callback.
 
 ```swift
     @objc func onNotification(notification notificationData: [AnyHashable : Any]) {
