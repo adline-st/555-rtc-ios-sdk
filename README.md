@@ -9,6 +9,7 @@ Below steps allow user to make an end-to-end PSTN call. This includes user authe
 1) Follow [installation guide](https://github.com/555platform/555-rtc-ios-sdk/wiki/Installation-Guide) to integrate SDK into your project.
 2) From [555 portal](https://developer.555.comcast.com/), get API key and access token.
 3) Complete [login](https://github.com/555platform/555-rtc-ios-sdk/wiki/User-Authentication) to get the JWT which is needed to access any SDK or backend APIs.
+4) Follow [notification guide](https://github.com/555platform/555-rtc-ios-sdk/wiki/Notification-Guide) to add support for APNS notification in your app.
 
   
 # Usage
