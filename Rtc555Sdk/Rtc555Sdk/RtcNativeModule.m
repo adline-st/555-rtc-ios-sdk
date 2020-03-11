@@ -19,6 +19,8 @@ RCT_EXTERN_METHOD(onCallFailed:(NSDictionary)errorInfo)
 RCT_EXTERN_METHOD(onRejectFailed:(NSDictionary)errorInfo)
 RCT_EXTERN_METHOD(onRejectSuccess:(NSString)callId)
 RCT_EXTERN_METHOD(onCallMerged:(NSString)callId)
+RCT_EXTERN_METHOD(onLocalStream:(NSDictionary)localStream)
+RCT_EXTERN_METHOD(onRemoteStream:(NSDictionary)remoteStream)
 
 
 @end
