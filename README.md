@@ -16,7 +16,7 @@ Below steps allow user to make an end-to-end PSTN call. This includes user authe
 
 ## PSTN Call
 
-This document list down all the SDK API calls and their usage for doing incoming/outgoing PSTN calls and using some advance call features like call hold/unhold, mute/unmute etc.  
+This document list down all the SDK APIs call and their usage for making incoming/outgoing PSTN calls and using advance call features like call hold/unhold, mute/unmute etc.  
 
 Before initiating or accepting a PSTN call, make sure you have [logged in](https://github.com/555platform/555-rtc-ios-sdk/wiki/User-Authentication) to 555 platform. 
 
@@ -36,9 +36,9 @@ establish the connection with the 555 platform.
 ```swift
 let config:Rtc555Config = Rtc555Sdk.sharedInstance.getConfig()
 config.phoneNumber =  // Source Telephone Number
-config.routingId =  // Unique id once login to 555 authmanager
+config.routingId =  // 555 platform login response will provide unique id for the logged in user.
 config.url =  // Event manager URL
-config.token =  /// JWT token 
+config.token =  /// 555 platform login response will provide unique jwt token for the logged in user.
 
 Rtc555Sdk.setConfig(config: config)
 
@@ -46,15 +46,10 @@ Rtc555Sdk.setConfig(config: config)
   
 ## Initiating an Outgoing Call
 
-To make outgoing calls, pass destination Telephone number, notificationPayload to *dial* api . 
+To make outgoing calls, pass destination telephone number, notificationPayload to *dial* api . Notification payload contain two field called *data* and *notification*. User can add any custom data as part *data* key which will get delivered to the remote end as part of the notification. Notification key contain the notification type and federation type of the notification (Both values are already populated in below example). 
 
-As shown below,in order to get callbacks during call, set delegate property of Rtc555Voice class which is of type Rtc555SdkDelegate to self and implement callback methods of Rtc55Sdkdelegate by extending it in the class.
 
-```swift
-Rtc555Voice.rtcDelegate = self
-```
-
-*dial* API returns enum result. Success case of result will return callid .failure case return error information.
+*dial* API returns enum Result.A successful dial API call with return call Id, failure case return error error code and the reason for the error.
 
 ```swift
 Rtc555Voice.dial( number: targetTelephoneNumber, notificationPayload:buildNotificationPayload()){ result in
@@ -104,7 +99,7 @@ Below is the Notification payload need to be build for outgoing notificationData
 | notification | dictionary     |   <ul> <li>type:"pstn"</li><li>topic :"federation/pstn" </li></ul>    |  
 
 
-***Note:** When using the Rtc555Voice class, it will ask user to allow to use microphone while running. Please make sure access is allowed. When the stream is started, it won't immediately access the microphone, it will use the microphone only when the call is connected. Hence the pop-up for mic access will be presented to the user at a later point of time.*
+***Note:** Please make sure to add mandatory microphone permission in your plist file before accessing Dial/Accept call APIs to allow SDK to create local audio stream*
 
 ## Accept/Reject an Incoming Call
 
@@ -254,7 +249,14 @@ Rtc555Voice.unmute(callId: callId)
 | heldCallId | unique id for the first session|
 
 
-## Audio Call Related Callbacks
+## Audio Call Delegates
+
+
+In order to get call status or error report duing the call, impletement Rtc555SdkDelegate and initialize the delegate as below
+
+```swift
+Rtc555Voice.rtcDelegate = self
+```
 
 ### onStatus
 
