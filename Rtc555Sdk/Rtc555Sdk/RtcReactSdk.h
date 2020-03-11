@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char RtcReactSdkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RtcReactSdk/PublicHeader.h>
 
-#import <RtcReactSdk/RtcNativeModule.h>
+#import <Rtc555Sdk/RtcNativeModule.h>
 
