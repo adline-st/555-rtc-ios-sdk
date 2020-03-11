@@ -29,8 +29,10 @@ class RtcReactBridge: NSObject {
  
     
   @objc func javascriptDidLoad(notification: NSNotification){
+    
+    isBridgeInitialized = true
+    
     if(!reactMethodArray.isEmpty){
-        isBridgeInitialized = true
         for item in reactMethodArray {
             for (key, value) in item {
                  callMethod(key, value as! [Any])
